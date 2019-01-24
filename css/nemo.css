@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+/* 全局CSS */
+html {
+    max-width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    background: #f1f2f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    color: #000;
+    font-size: 15px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body, header, footer, main, dialog, h1, h2, h3, h4, h5, h6, p, ol, ul, li, button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+header, footer, main, dialog, section {
+    display: block;
+}
+
+a:link, a:hover, a:active, a:visited {
+    text-decoration-line: none;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pull-left {
+    float: left;
+    margin-right: 14px;
+}
+
+.pull-right {
+    float: right;
+    margin-left: 14px;
+}
+
+/* Header部分CSS */
+.header {
+    width: 100%;
+    height: 64px;
+    margin-bottom: 40px;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header .container {
+    height: 64px;
+}
+
+.logo {
+    height: 64px;
+    line-height: 64px;
+}
+
+/* Main部分CSS */
+.content {
+    width: 1220px;
+    min-height: 315px;
+    margin-bottom: 40px;
+}
+
+/* Button部分CSS */
+.btn {
+    width: 108px;
+    height: 42px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn .icon {
+    top: 2px;
+    margin-right: 4px;
+}
+
+.btn-default {
+    color: #000;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+
+.btn-default:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-default:active {
+    background-color: #e6e6e6;
+}
+
+.btn-default:disabled {
+    color: #909399;
+    cursor: not-allowed;
+    border-color: #dcdfe6;
+    background-color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #303133;
+}
+
+.btn-primary:active {
+    background-color: #606266;
+}
+
+.btn-primary:disabled {
+    cursor: not-allowed;
+    background-color: #909399;
+}
+
+.btn-link {
+    background-color: transparent;
+}
+
+.btn-picker {
+    border: 1px solid;
+}
+
+/* Form部分CSS */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-label {
+    height: 42px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.form-control {
+    height: 42px;
+    line-height: 42px;
+    color: #444;
+    font-size: 15px;
+    padding: 0 12px;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+}
+
+select.form-control {
+    padding: 0 4px 0 8px;
+}
+
+textarea.form-control {
+    min-height: 146px;
+    max-height: 206px;
+    line-height: 20px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.form-control:focus {
+    border-color: #000;
+}
+
+.form {
+    display: block;
+}
+
+.form .form-label {
+    display: block;
+}
+
+.form .form-control {
+    display: block;
+    width: 100%;
+}
+
+.form textarea.form-control {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.form-horizontal {
+    display: block;
+}
+
+.form-horizontal .form-group {
+    overflow: hidden;
+}
+
+.form-horizontal .form-label, .form-horizontal .form-control {
+    float: left;
+}
+
+/* Modal部分CSS */
+.modal {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    width: 450px;
+    height: auto;
+    margin: 120px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.modal-header {
+    padding: 16px;
+    border-bottom: 1px solid #dcdfe6;
+}
+
+.modal-title {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.modal-dismiss {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content {
+    overflow: hidden;
+    padding: 40px;
+}
+
+.modal-footer {
+    overflow: hidden;
+    padding: 16px;
+    border-top: 1px solid #dcdfe6;
+}
+
+.modal-footer > .btn {
+    width: 64px;
+    height: 36px;
+}
+
+.modal-footer > .btn-primary:disabled {
+    width: 96px;
+}
+
+/* Rotate部分CSS */
+.rotate {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 2s linear infinite;
+    -moz-animation: rotate 2s linear infinite;
+    -o-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg)
+    }
+    to {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+/* Icon部分CSS */
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings', serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-remove:before {
+    content: "\e014";
+}
+
+.icon-cog:before {
+    content: "\e019";
+}
