@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Nemo - 漫画分享平台</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/nemo.css"/>
+    <link rel="stylesheet" href="css/book.css"/>
+    <link rel="stylesheet" href="css/user-index.css">
+    <link rel="stylesheet" href="css/author.css"/>
+    <style>
+        .form-label-2 {
+        }
+
+        .form-label-2 .form-label {
+            width: 30px;
+            margin-right: 12px;
+        }
+
+        .form-label-2 .form-control {
+            width: 328px;
+        }
+
+        .form-label-2 textarea.form-control {
+            min-width: 328px;
+            max-width: 328px;
+        }
+
+        .img-label {
+            float: left;
+            height: 90px;
+            line-height: 90px;
+            margin-right: 12px;
+            font-weight: 700;
+        }
+
+        .img-control {
+            float: left;
+            display: block;
+            width: 118px;
+            height: 88px;
+            object-fit: cover;
+            border: 1px solid #ced4da;
+        }
+
+        .btn-choose {
+            width: 96px;
+            height: 36px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="header-fixed">
+        <div class="container">
+            <h1 class="app-name pull-left">Nemo</h1>
+            <div class="account pull-right">
+                <div class="account-info">
+                    <img class="account-avatar" src="images/avatar.jpg" alt=""/>
+                    <span class="account-name">王振琦</span>
+                    <span class="icon icon-menu-down"></span>
+                </div>
+                <nav class="account-nav" style="display: none">
+                    <a class="account-item" href=""><span class="icon icon-user"></span>个人主页</a>
+                    <a class="account-item" href=""><span class="icon icon-cog"></span>账号设置</a>
+                    <p class="account-item account-logout"><span class="icon icon-off"></span>退出登录</p>
+                </nav>
+            </div>
+            <span class="header-line pull-right"></span>
+            <div class="query-group pull-right">
+                <label class="query-label"><span class="icon icon-search"></span></label>
+                <input class="query-control" type="text" placeholder="搜索您感兴趣的内容"/>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <div class="master">
+        <section class="user-style">
+            <img class="user-portrait" src="" alt=""/>
+            <div class="user-info">
+                <img class="user-avatar" src="" alt=""/>
+                <h1 class="user-name">王振琦</h1>
+                <p class="user-location">山东省&nbsp;&nbsp;青岛市</p>
+                <p class="user-biography">
+                    我是一个喜欢艺术热爱生活的小胖子
+                    我的梦想是成为一名架构师 但是我还不怎么会编程
+                    那就做一个艺术家吧 可是我漫画画的不好看 乐感也不好
+                    还是不要做架构师了 架构师什么的都是秃头
+                    也不要做艺术家了 艺术家什么的都是流氓
+                    比流氓还流氓的是专家学者
+                </p>
+            </div>
+        </section>
+        <nav class="user-option">
+            <span class="active">漫画&nbsp;8</span>
+            <span>关注&nbsp;16</span>
+            <span>粉丝&nbsp;128</span>
+            <span>收藏&nbsp;4</span>
+        </nav>
+    </div>
+    <section class="content">
+        <div class="create">
+            <div class="create-logo"><span class="icon icon-plus"></span></div>
+            <span class="create-note">创建漫画册</span>
+        </div>
+        <div class="book">
+            <img class="book-cover" src="" alt=""/>
+            <section class="book-info">
+                <h6 class="book-name">漫十年</h6>
+                <p class="book-description">
+                    五月初
+                    屹立在温暖的阳光下
+                    心情也变得柔和起来
+                    那些你曾期待的 却放弃你的
+                    那些你不在意的 你已放弃的
+                    都成了自己辛辛苦苦的独角戏
+                    在新的生活到来之前
+                    在煎熬中最后翻阅那些过往
+                    一番不舍与惋惜之后
+                    才发觉一切是那么的不值得
+                    原来实现愿望是这么的难
+                    我用了这么久才能去忘记你
+                </p>
+                <p class="book-note">
+                    <span class="pull-left">风格&nbsp;清新</span>
+                    <span class="pull-left"></span>
+                    <span class="pull-left">收藏&nbsp;123</span>
+                    <a class="icon icon-link pull-right" href=""></a>
+                </p>
+            </section>
+        </div>
+        <div class="book">
+            <img class="book-cover" src="" alt=""/>
+            <section class="book-info">
+                <h6 class="book-name">漫十年</h6>
+                <p class="book-description">
+                    五月初
+                    屹立在温暖的阳光下
+                    心情也变得柔和起来
+                    那些你曾期待的 却放弃你的
+                    那些你不在意的 你已放弃的
+                    都成了自己辛辛苦苦的独角戏
+                    在新的生活到来之前
+                    在煎熬中最后翻阅那些过往
+                    一番不舍与惋惜之后
+                    才发觉一切是那么的不值得
+                    原来实现愿望是这么的难
+                    我用了这么久才能去忘记你
+                </p>
+                <p class="book-note">
+                    <span class="pull-left">风格&nbsp;清新</span>
+                    <span class="pull-left"></span>
+                    <span class="pull-left">收藏&nbsp;123</span>
+                    <a class="icon icon-link pull-right" href=""></a>
+                </p>
+            </section>
+        </div>
+    </section>
+    <section class="content">
+        <div class="author">
+            <section class="author-style">
+                <img class="author-portrait" src="images/portrait.jpg" alt=""/>
+                <img class="author-avatar" src="images/avatar.jpg" alt=""/>
+                <h6 class="author-name">王振琦</h6>
+            </section>
+            <section class="author-info">
+                <p class="author-biography">
+                    我是一个喜欢艺术热爱生活的小胖子
+                    我的梦想是成为一名架构师 但是我还不怎么会编程
+                    那就做一个艺术家吧 可是我漫画画的不好看 乐感也不好
+                    还是不要做架构师了 架构师什么的都是秃头
+                    也不要做艺术家了 艺术家什么的都是流氓
+                    比流氓还流氓的是专家学者
+                </p>
+                <p class="author-note">
+                    <span class="pull-left">作品&nbsp;18</span>
+                    <span class="pull-left"></span>
+                    <span class="pull-left">粉丝&nbsp;1660</span>
+                    <a class="icon icon-link pull-right" href=""></a>
+                </p>
+            </section>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <span>&copy;&nbsp;2016-2019&nbsp;儒墨未来科技有限公司</span>
+</footer>
+<div class="modal">
+    <dialog class="modal-dialog">
+        <header class="modal-header">
+            <h1 class="modal-title">创建漫画册</h1>
+            <div class="modal-dismiss">
+                <span class="icon icon-remove"></span>
+            </div>
+        </header>
+        <main class="modal-content">
+            <form class="form-horizontal form-label-2">
+                <div class="form-group">
+                    <label class="img-label">封面</label>
+                    <img class="img-control" src="images/avatar.jpg" alt=""/>
+                    <button class="btn btn-choose btn-default pull-left"><span class="icon icon-link"></span>选择封面</button>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">名称</label>
+                    <input class="form-control" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">风格</label>
+                    <select class="form-control">
+                        <option selected disabled>请选择</option>
+                        <option value="古典">古典</option>
+                        <option value="热血">热血</option>
+                        <option value="唯美">唯美</option>
+                        <option value="清新">清新</option>
+                        <option value="推理">推理</option>
+                        <option value="爆笑">爆笑</option>
+                        <option value="悬疑">悬疑</option>
+                        <option value="萌系">萌系</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">简介</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+            </form>
+        </main>
+        <footer class="modal-footer">
+            <button class="btn btn-sm btn-default pull-right" type="button">取消</button>
+            <button class="btn btn-sm btn-primary pull-right" type="button">创建</button>
+        </footer>
+    </dialog>
+</div>
+</body>
+</html>

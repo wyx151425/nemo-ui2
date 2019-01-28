@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>坦克对战</title>
+    <style>
+        html {
+            background-color: #f1f2f3;
+        }
+
+        .container {
+            margin: 100px auto;
+            width: 806px;
+            height: 806px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .panel {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            border: 3px dashed #dcdfe6;
+        }
+
+        .tank {
+            display: inline-block;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-image: url("images/avatar.jpg");
+        }
+    </style>
+</head>
+<body>
+<main id="app" class="container">
+    <div class="panel">
+        <div id="tank" class="tank" @keydown="move"></div>
+    </div>
+</main>
+<script src="js/vue.min.js"></script>
+<script>
+    const app = new Vue({
+        el: "#app",
+        data: {
+            tank: {
+                x: 700,
+                y: 700,
+                icon: "../images/avatar.jpg"
+            }
+        },
+        methods: {
+            move: function (event) {
+
+            },
+            up: function () {
+
+            },
+            down: function () {
+            },
+
+
+        }
+    });
+</script>
+</body>
+</html>

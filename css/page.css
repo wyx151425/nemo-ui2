@@ -1,0 +1,52 @@
+.page {
+    display: inline-block;
+    position: relative;
+    width: 224px;
+    height: 315px;
+    margin: 0 20px 40px 0;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-image {
+    display: block;
+    width: 208px;
+    height: 299px;
+    padding: 8px;
+    object-fit: cover;
+}
+
+.page-order {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.page-note {
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 192px;
+    height: 22px;
+    color: #fff;
+    text-align: right;
+}
+
+.page-note img {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.page:hover > .page-note {
+    display: block;
+}

@@ -66,7 +66,7 @@ a:link, a:hover, a:active, a:visited {
     width: 100%;
     height: 64px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
 }
 
 .header .container {
@@ -76,7 +76,7 @@ a:link, a:hover, a:active, a:visited {
 .app-name {
     height: 64px;
     line-height: 64px;
-    font-size: 2em;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -84,16 +84,15 @@ a:link, a:hover, a:active, a:visited {
     margin: 14px 0;
 }
 
-.header-line {
-    display: block;
-    height: 24px;
-    margin: 20px 24px;
+button.login-action {
+    width: auto;
 }
 
-.header-line:after {
-    top: 1px;
-    content: "|";
-    color: #dcdfe6;
+.header-line {
+    width: 1px;
+    height: 20px;
+    margin: 22px 28px;
+    background-color: #dcdfe6;
 }
 
 .account {
@@ -101,17 +100,17 @@ a:link, a:hover, a:active, a:visited {
     cursor: pointer;
 }
 
-.app-code {
+.app-mobile {
     position: absolute;
-    top: 64px;
+    top: 65px;
     right: 0;
     width: 172px;
     height: 202px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
-.app-code-img {
+.app-code {
     display: block;
     width: 140px;
     height: 140px;
@@ -130,10 +129,13 @@ a:link, a:hover, a:active, a:visited {
 }
 
 .account-info .icon-phone {
-    font-size: 18px;
+    top: 4px;
+    font-size: 20px;
+    margin-right: -2px;
 }
 
 .account-info .icon-menu-down {
+    top: 0;
     font-size: 12px;
 }
 
@@ -142,24 +144,24 @@ a:link, a:hover, a:active, a:visited {
     float: left;
     width: 40px;
     height: 40px;
+    margin: 11px 0;
     border: 1px solid #dcdfe6;
     border-radius: 50%;
     object-fit: cover;
-    margin: 11px 0;
 }
 
 .account-name {
-    margin: 0 4px 0 8px;
+    margin: 0 8px;
 }
 
 .account-nav {
     position: absolute;
-    top: 64px;
+    top: 65px;
     right: 0;
     width: 140px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .account-nav .icon {
@@ -183,7 +185,55 @@ a:link, a:hover, a:active, a:visited {
     border-top: 1px solid #dcdfe6;
 }
 
+.query-group {
+    position: relative;
+    width: 300px;
+    height: 36px;
+    margin: 14px 12px 14px 0;
+}
+
+.query-control {
+    width: 300px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 36px 0 10px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+}
+
+.query-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    color: #ced4da;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.query-label .icon {
+    top: 3px;
+}
+
+/* Footer部分CSS */
+.footer {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background-color: #e1e2e3;
+}
+
 /* Main部分CSS */
+main.container {
+    min-height: 800px;
+}
+
 .content {
     width: 1220px;
     min-height: 315px;
@@ -209,9 +259,14 @@ a:link, a:hover, a:active, a:visited {
     height: 36px;
 }
 
+.btn-block {
+    width: 100%;
+    height: 45px;
+}
+
 .btn-default {
     color: #000;
-    border: 1px solid #bbb;
+    border: 1px solid #ced4da;
     background-color: #fff;
 }
 
@@ -220,7 +275,7 @@ a:link, a:hover, a:active, a:visited {
 }
 
 .btn-default:active {
-    background-color: #e6e6e6;
+    background-color: #ebebeb;
 }
 
 .btn-default:disabled {
@@ -252,10 +307,6 @@ a:link, a:hover, a:active, a:visited {
     background-color: transparent;
 }
 
-.btn-picker {
-    border: 1px solid;
-}
-
 /* Form部分CSS */
 .form-group {
     margin-bottom: 12px;
@@ -273,8 +324,12 @@ a:link, a:hover, a:active, a:visited {
     color: #444;
     font-size: 15px;
     padding: 0 12px;
-    border: 1px solid #bbb;
+    border: 1px solid #ced4da;
     box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #000;
 }
 
 select.form-control {
@@ -288,10 +343,6 @@ textarea.form-control {
     padding: 12px;
     font-size: 14px;
     font-family: Arial;
-}
-
-.form-control:focus {
-    border-color: #000;
 }
 
 .form {
@@ -449,6 +500,10 @@ textarea.form-control {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+    content: "\e003";
+}
+
 .icon-user:before {
     content: "\e008";
 }
@@ -463,6 +518,18 @@ textarea.form-control {
 
 .icon-cog:before {
     content: "\e019";
+}
+
+.icon-trash:before {
+    content: "\e020";
+}
+
+.icon-plus:before {
+    content: "\002b";
+}
+
+.icon-link:before {
+    content: "\e144";
 }
 
 .icon-phone:before {

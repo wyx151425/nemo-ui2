@@ -1,0 +1,68 @@
+.book {
+    display: inline-block;
+    width: 224px;
+    height: 315px;
+    margin: 0 20px 40px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    display: block;
+    width: 224px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.book-info {
+    position: relative;
+    width: 224px;
+    height: 155px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.book-name {
+    height: 16px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.book-description {
+    display: -webkit-box;
+    height: 60px;
+    line-height: 20px;
+    color: #606266;
+    font-size: 13px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.book-note {
+    position: absolute;
+    bottom: 16px;
+    width: 192px;
+    height: 15px;
+    line-height: 15px;
+    color: #909399;
+    font-size: 13px;
+}
+
+.book-note span:nth-child(even) {
+    width: 1px;
+    height: 11px;
+    margin: 2px 12px;
+    background-color: #909399;
+}
+
+.book-note > .icon-link {
+    top: -1px;
+    color: #ffa500;
+    font-size: 18px;
+}
+
+.book-note > .icon-link:hover, .book-note > .icon-link:active {
+    color: #ff4500;
+}

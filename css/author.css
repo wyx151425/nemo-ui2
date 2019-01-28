@@ -1,0 +1,94 @@
+.author {
+    display: inline-block;
+    width: 224px;
+    height: 315px;
+    margin: 0 20px 40px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.author-style {
+    position: relative;
+    width: 224px;
+    height: 160px;
+}
+
+.author-portrait {
+    display: block;
+    width: 224px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.author-avatar {
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    z-index: 1;
+    width: 72px;
+    height: 72px;
+    border: solid 4px #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 96px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: right;
+    padding: 0 16px 0 112px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.author-info {
+    position: relative;
+    width: 224px;
+    height: 155px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.author-biography {
+    display: -webkit-box;
+    height: 80px;
+    line-height: 20px;
+    color: #606266;
+    font-size: 13px;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.author-note {
+    position: absolute;
+    bottom: 16px;
+    width: 192px;
+    height: 15px;
+    line-height: 15px;
+    color: #909399;
+    font-size: 13px;
+}
+
+.author-note span:nth-child(even) {
+    width: 1px;
+    height: 11px;
+    margin: 2px 12px;
+    background-color: #909399;
+}
+
+.author-note > .icon-link {
+    top: -1px;
+    color: #67c23a;
+    font-size: 18px;
+}
+
+.author-note > .icon-link:hover, .author-note > .icon-link:active {
+    color: #008000;
+}
