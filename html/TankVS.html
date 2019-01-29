@@ -29,17 +29,17 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            background-image: url("images/avatar.jpg");
+            background-image: url("../images/avatar.jpg");
         }
     </style>
 </head>
 <body>
 <main id="app" class="container">
     <div class="panel">
-        <div id="tank" class="tank" @keydown="move"></div>
+        <div id="tank" class="tank icon icon-triangle-right" @keydown="move"></div>
     </div>
 </main>
-<script src="js/vue.min.js"></script>
+<script src="../js/vue.min.js"></script>
 <script>
     const app = new Vue({
         el: "#app",
