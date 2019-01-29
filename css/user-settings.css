@@ -1,0 +1,73 @@
+.panel {
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+
+.user-info {
+    overflow: hidden;
+}
+
+.user-info .btn {
+    margin-top: 46px;
+    margin-left: 14px;
+}
+
+.btn-choose {
+    width: 96px;
+    height: 36px;
+    font-size: 14px;
+}
+
+.user-avatar {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border: 4px solid #dcdfe6;
+}
+
+.user-option {
+    border-top: 1px solid #ced4da;
+}
+
+.user-option span {
+    display: inline-block;
+    height: 48px;
+    line-height: 52px;
+    margin-right: 32px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 4px solid #fff;
+}
+
+.user-option span.active {
+    border-bottom: 4px solid #dcdfe6;
+}
+
+.form-horizontal {
+    padding-top: 40px;
+}
+
+.form-label-2 .form-label {
+    margin-right: 12px;
+}
+
+p.form-label {
+    padding-left: 12px;
+}
+
+.form-label-2 .form-control {
+    width: 328px;
+}
+
+.form-label-2 textarea.form-control {
+    min-width: 328px;
+    max-width: 328px;
+}
+
+.form-label-2 select.form-control {
+    width: 158px;
+    margin-right: 12px;
+}

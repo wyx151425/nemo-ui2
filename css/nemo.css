@@ -12,8 +12,8 @@ html {
     overflow-x: hidden;
 }
 
-body {
-    color: #303133;
+body, dialog {
+    color: #000;
     font-size: 15px;
     font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
@@ -66,7 +66,7 @@ a:link, a:hover, a:active, a:visited {
     width: 100%;
     height: 64px;
     background-color: #fff;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header .container {
@@ -174,7 +174,7 @@ button.login-action {
     width: 140px;
     height: 42px;
     line-height: 42px;
-    color: #303133;
+    color: #000;
 }
 
 .account-item:hover {
@@ -234,10 +234,18 @@ main.container {
     min-height: 800px;
 }
 
+.panel {
+    width: 1200px;
+    min-height: 800px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
 .content {
     width: 1220px;
     min-height: 315px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 /* Button部分CSS */
@@ -265,7 +273,7 @@ main.container {
 }
 
 .btn-default {
-    color: #303133;
+    color: #000;
     border: 1px solid #ced4da;
     background-color: #fff;
 }
@@ -275,32 +283,32 @@ main.container {
 }
 
 .btn-default:active {
-    background-color: #ebebeb;
+    background-color: #efefef;
 }
 
 .btn-default:disabled {
     color: #909399;
     cursor: not-allowed;
-    border-color: #dcdfe6;
+    border-color: #ced4da;
     background-color: #fff;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #303133;
+    background-color: #000;
 }
 
 .btn-primary:hover {
-    background-color: #606266;
+    background-color: #303133;
 }
 
 .btn-primary:active {
-    background-color: #909399;
+    background-color: #606266;
 }
 
 .btn-primary:disabled {
     cursor: not-allowed;
-    background-color: #c0c4cc;
+    background-color: #909399;
 }
 
 .btn-link {
@@ -321,7 +329,7 @@ main.container {
 .form-control {
     height: 42px;
     line-height: 42px;
-    color: #303133;
+    color: #000;
     font-size: 15px;
     padding: 0 12px;
     border: 1px solid #ced4da;
@@ -329,7 +337,7 @@ main.container {
 }
 
 .form-control:focus {
-    border-color: #303133;
+    border-color: #000;
 }
 
 select.form-control {
@@ -390,7 +398,7 @@ textarea.form-control {
     height: auto;
     margin: 120px auto;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 0 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 .modal-header {

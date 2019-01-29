@@ -8,47 +8,6 @@
     <link rel="stylesheet" href="css/book.css"/>
     <link rel="stylesheet" href="css/user-index.css">
     <link rel="stylesheet" href="css/author.css"/>
-    <style>
-        .form-label-2 {
-        }
-
-        .form-label-2 .form-label {
-            width: 30px;
-            margin-right: 12px;
-        }
-
-        .form-label-2 .form-control {
-            width: 328px;
-        }
-
-        .form-label-2 textarea.form-control {
-            min-width: 328px;
-            max-width: 328px;
-        }
-
-        .img-label {
-            float: left;
-            height: 90px;
-            line-height: 90px;
-            margin-right: 12px;
-            font-weight: 700;
-        }
-
-        .img-control {
-            float: left;
-            display: block;
-            width: 118px;
-            height: 88px;
-            object-fit: cover;
-            border: 1px solid #ced4da;
-        }
-
-        .btn-choose {
-            width: 96px;
-            height: 36px;
-            border: 1px solid #000;
-        }
-    </style>
 </head>
 <body>
 <header class="header">
@@ -197,10 +156,12 @@
         </header>
         <main class="modal-content">
             <form class="form-horizontal form-label-2">
-                <div class="form-group">
-                    <label class="img-label">封面</label>
-                    <img class="img-control" src="images/avatar.jpg" alt=""/>
-                    <button class="btn btn-choose btn-default pull-left"><span class="icon icon-link"></span>选择封面</button>
+                <div class="form-group img-group">
+                    <label class="form-label">封面</label>
+                    <img class="form-control" src="images/icon/picture_silver.png" alt=""/>
+                    <button class="btn btn-choose btn-default pull-left" type="button">
+                        <span class="icon icon-link"></span>选择图片
+                    </button>
                 </div>
                 <div class="form-group">
                     <label class="form-label">名称</label>

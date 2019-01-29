@@ -74,7 +74,6 @@
     height: 60px;
     line-height: 64px;
     margin: 0 24px;
-    color: #000;
     font-size: 17px;
     cursor: pointer;
     border-bottom: 4px solid #fff;
@@ -103,7 +102,7 @@
 }
 
 .create:hover, .create:active {
-    background-color: #ebebeb;
+    background-color: #efefef;
 }
 
 .create-logo {
@@ -129,5 +128,46 @@
     text-align: center;
     color: #606266;
     margin-top: 16px;
+}
+
+.form-label-2 .form-label {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.form-label-2 .form-control {
+    width: 328px;
+}
+
+.form-label-2 textarea.form-control {
+    min-width: 328px;
+    max-width: 328px;
+}
+
+.img-group .form-label {
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+.img-group .form-control {
+    float: left;
+    display: block;
+    width: 118px;
+    height: 88px;
+    object-fit: cover;
+    border: 1px solid #ced4da;
+}
+
+.img-group .btn {
+    margin: 27px 0 27px 12px;
+}
+
+.btn-choose {
+    width: 96px;
+    height: 36px;
+    font-size: 14px;
 }
 
