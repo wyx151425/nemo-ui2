@@ -1,5 +1,5 @@
 .panel {
-    padding: 40px 120px;
+    padding: 50px 120px;
     box-sizing: border-box;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .form-horizontal {
-    padding-top: 40px;
+    padding: 40px 104px 0 104px;
 }
 
 .form-label-2 .form-label {
@@ -70,4 +70,22 @@ p.form-label {
 .form-label-2 select.form-control {
     width: 158px;
     margin-right: 12px;
+}
+
+.form-label-2 .btn {
+    margin-left: 262px;
+}
+
+.form-label-4 .form-label {
+    width: 60px;
+    margin-right: 12px;
+    text-align: right;
+}
+
+.form-label-4 .form-control {
+    width: 328px;
+}
+
+.form-label-4 .btn {
+    margin-left: 292px;
 }
