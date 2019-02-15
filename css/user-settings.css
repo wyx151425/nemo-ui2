@@ -5,17 +5,20 @@
 
 .user-info {
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .user-info .btn {
     margin-top: 46px;
-    margin-left: 14px;
+    margin-left: 16px;
 }
 
 .btn-choose {
     width: 96px;
     height: 36px;
     font-size: 14px;
+    border: 1px solid #000;
+    background-color: transparent;
 }
 
 .user-avatar {
@@ -23,8 +26,7 @@
     width: 120px;
     height: 120px;
     object-fit: cover;
-    margin-bottom: 40px;
-    border: 4px solid #dcdfe6;
+    border: 4px solid #ced4da;
 }
 
 .user-option {
@@ -43,7 +45,7 @@
 }
 
 .user-option span.active {
-    border-bottom: 4px solid #dcdfe6;
+    border-bottom: 4px solid #ced4da;
 }
 
 .form-horizontal {
@@ -90,16 +92,22 @@ p.form-label {
     margin-left: 292px;
 }
 
-.radio {
+.radio-control {
     border: none;
 }
 
-.form-radio {
+.radio-inline {
+    position: relative;
     display: inline-block;
+}
+
+.radio {
+    display: inline-block;
+    float: left;
     width: 18px;
     height: 18px;
-    padding: 3px;
-    margin-top: 4px;
+    margin: 11px 6px 13px 0;
+    padding: 4px;
     border: 1px solid #ced4da;
     border-radius: 50%;
     box-sizing: border-box;
@@ -107,11 +115,16 @@ p.form-label {
     background-clip: content-box;
 }
 
+.radio-note {
+    float: left;
+    margin-right: 14px;
+}
+
 input[type="radio"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 }
 
-input[type="radio"]:checked + .form-radio {
+input[type="radio"]:checked + .radio {
     background-color: #000;
 }

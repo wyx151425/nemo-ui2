@@ -279,7 +279,7 @@ main.container {
 }
 
 .btn-default:hover {
-    background-color: #f4f4f4;
+    background-color: #fafafa;
 }
 
 .btn-default:active {
@@ -350,7 +350,7 @@ textarea.form-control {
     line-height: 20px;
     padding: 12px;
     font-size: 14px;
-    font-family: Arial;
+    font-family: Arial, serif;
 }
 
 .form {
