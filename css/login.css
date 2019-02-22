@@ -7,11 +7,10 @@
 }
 
 .favicon {
+    float: left;
     display: block;
     width: 54px;
     height: 54px;
-    margin-left: -3px;
-    float: left;
 }
 
 .app {
@@ -49,21 +48,12 @@
     line-height: 54px;
 }
 
-.form-inline {
-
-}
-
-.form-inline .form-group {
+.form-group {
     position: relative;
-    margin-bottom: 8px;
     overflow: hidden;
 }
 
-.form-inline .form-control {
-    padding: 0 54px;
-}
-
-.form-inline .form-label {
+.form-label {
     position: absolute;
     top: 0;
     left: 3px;
@@ -75,7 +65,11 @@
     text-align: center;
 }
 
-.form-inline .form-action {
+.form-control {
+    padding: 0 54px;
+}
+
+.form-action {
     position: absolute;
     top: 0;
     right: 0;
@@ -92,11 +86,7 @@
     color: #000;
 }
 
-.sms-group {
-
-}
-
-.sms-group .form-control {
+.sms-control {
     padding-right: 114px;
 }
 
@@ -107,7 +97,6 @@
     width: 90px;
     height: 32px;
     font-size: 14px;
-    border-radius: 0;
 }
 
 .btn-block {

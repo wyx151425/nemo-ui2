@@ -2,7 +2,6 @@
     width: 1200px;
     height: 514px;
     margin-bottom: 40px;
-    box-sizing: border-box;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
 }

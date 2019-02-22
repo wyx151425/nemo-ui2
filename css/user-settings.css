@@ -36,6 +36,18 @@
     border-bottom: 4px solid #ced4da;
 }
 
+.btn-choose {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    color: #ced4da;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
 .form-horizontal {
     padding: 40px 104px 0 104px;
 }
@@ -80,11 +92,11 @@ p.form-label {
     margin-left: 292px;
 }
 
-.radio-control {
+.radio-group {
     border: none;
 }
 
-.radio-control .pull-left {
+.radio-group .pull-left {
     margin-right: 16px;
 }
 

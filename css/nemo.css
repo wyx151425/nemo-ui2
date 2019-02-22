@@ -593,6 +593,10 @@ input[type="checkbox"]:checked + .checkbox {
     content: "\e033";
 }
 
+.icon-camera:before {
+    content: "\e046";
+}
+
 .icon-remove-sign:before {
     content: "\e083";
 }
