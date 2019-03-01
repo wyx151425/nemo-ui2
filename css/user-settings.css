@@ -4,6 +4,7 @@
 }
 
 .user-info {
+    position: relative;
     overflow: hidden;
     margin-bottom: 40px;
 }
@@ -37,15 +38,19 @@
 }
 
 .btn-choose {
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    color: #ced4da;
-    font-size: 18px;
+    position: absolute;
+    left: 88px;
+    bottom: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    color: #909399;
+    font-size: 20px;
     text-align: center;
     border: 1px solid #ced4da;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .form-horizontal {

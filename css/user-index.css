@@ -20,9 +20,13 @@
 }
 
 .user-info {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     position: absolute;
     top: 0;
-    width: 700px;
+    width: 720px;
     height: 300px;
     padding: 75px 250px;
     text-align: center;
@@ -30,7 +34,6 @@
 }
 
 .user-avatar {
-    display: inline-block;
     width: 136px;
     height: 136px;
     margin-bottom: 12px;
