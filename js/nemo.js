@@ -20,3 +20,15 @@ const header = new Vue({
         }
     }
 });
+
+function getFileNativeUrl(file) {
+    let url = null;
+    if (undefined !== window.createObjectURL) {
+        url = window.createObjectURL(file);
+    } else if (undefined !== window.URL) {
+        url = window.URL.createObjectURL(file);
+    } else if (undefined !== window.webkitURL) {
+        url = window.webkitURL.createObjectURL(file);
+    }
+    return url;
+}
