@@ -14,9 +14,6 @@ const header = new Vue({
             this.timer = setInterval(function () {
                 header.isVisible = false;
             }, 500);
-        },
-        loginModalVisible: function () {
-            loginModal.visible();
         }
     }
 });

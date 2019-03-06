@@ -48,6 +48,8 @@
 }
 
 .user-info {
+    display: flex;
+    display: -webkit-flex;
     position: absolute;
     top: 360px;
     width: 100%;
@@ -55,10 +57,32 @@
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+.user-style {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    height: 60px;
+}
+
 .user-avatar {
+    display: block;
     width: 42px;
     height: 42px;
+    margin-left: 12px;
+    margin-right: 10px;
     border-radius: 50%;
+}
+
+.user-name {
+    color: #fff;
+}
+
+.btn-elegance {
+    margin: auto;
+    color: #fff;
+    border-color: #fff;
 }
 
 .book-appreciate {
