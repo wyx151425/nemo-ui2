@@ -1,0 +1,116 @@
+.master {
+    position: relative;
+    width: 1200px;
+    height: 480px;
+    background-color: #fff;
+}
+
+.book-cover {
+    display: block;
+    width: 1200px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.book-info {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    width: 720px;
+    height: 360px;
+    padding: 0 240px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.book-name {
+    width: 100%;
+    height: 40px;
+    font-size: 28px;
+}
+
+.book-description {
+    width: 100%;
+    line-height: 22px;
+    min-height: 22px;
+    max-height: 66px;
+    margin-top: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.user-info {
+    display: flex;
+    display: -webkit-flex;
+    position: absolute;
+    top: 360px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.user-style {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    height: 60px;
+}
+
+.user-avatar {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-left: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-name {
+    color: #fff;
+}
+
+.book-appreciate {
+    width: 1200px;
+    height: 60px;
+}
+
+.list-way {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/list-silver.png);
+    background-size: cover;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.list-active {
+    background: url(../images/icon/list-black.png);
+    background-size: cover;
+}
+
+.slide-way {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/slide-silver.png);
+    background-size: cover;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.slide-active {
+    background: url(../images/icon/slide-black.png);
+    background-size: cover;
+}

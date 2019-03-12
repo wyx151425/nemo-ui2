@@ -85,6 +85,22 @@
     border-color: #fff;
 }
 
+.book-settings {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.book-settings .icon {
+    top: 3px;
+}
+
 .book-appreciate {
     width: 1200px;
     height: 60px;
@@ -247,4 +263,8 @@
 
 .delete-content {
     font-size: 17px;
+}
+
+.icon-bookmark:before {
+    content: "\e044";
 }

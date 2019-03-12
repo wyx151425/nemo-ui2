@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Nemo - 漫画分享平台</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/nemo.css"/>
+    <link rel="stylesheet" href="css/author-book.css">
 </head>
 <body>
 <header id="header" class="header">
@@ -30,5 +32,40 @@
         </div>
     </div>
 </header>
+<main class="container">
+    <section class="master">
+        <img class="book-cover" src="" alt=""/>
+        <div class="book-info">
+            <p class="book-name">漫十年</p>
+            <p class="book-description">
+                五月初
+                屹立在温暖的阳光下
+                心情也变得柔和起来
+                那些你曾期待的 却放弃你的
+                那些你不在意的 你已放弃的
+                都成了自己辛辛苦苦的独角戏
+                在新的生活到来之前
+                在煎熬中最后翻阅那些过往
+                一番不舍与惋惜之后
+                才发觉一切是那么的不值得
+                原来实现愿望是这么的难
+                我用了这么久才能去忘记你
+            </p>
+        </div>
+        <div class="user-info">
+            <a class="user-style" href="">
+                <img class="user-avatar" src="images/avatar.jpg" alt=""/>
+                <span class="user-name">王振琦</span>
+            </a>
+        </div>
+        <div class="book-appreciate">
+            <span class="list-way list-active"></span>
+            <span class="slide-way" @click="pageSlideModalVisible"></span>
+        </div>
+    </section>
+    <section class="content">
+
+    </section>
+</main>
 </body>
 </html>
