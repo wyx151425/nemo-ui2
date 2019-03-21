@@ -1,13 +1,58 @@
-.carousel {
-    width: 712px;
+.master {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
     height: 450px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.carousel {
+    width: 780px;
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    position: relative;
+    width: 780px;
+    height: 450px;
+}
+
+.carousel-item img {
+    display: block;
+    width: 780px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    padding: 24px;
+    text-align: center;
+    border: 2px solid #ced4da;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.caption-title {
+    display: block;
+    padding-bottom: 16px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.caption-note {
+    display: block;
+    padding-top: 16px;
+    border-top: 1px solid #909399;
+    color: #303133;
+    text-align: center;
 }
 
 .panel {
-    width: 470px;
-    height: 290px;
+    width: 340px;
+    height: 390px;
+    padding: 30px;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), 0 0 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
 }

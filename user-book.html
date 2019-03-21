@@ -35,7 +35,7 @@
 </header>
 <main id="userBook" class="container">
     <section class="master">
-        <img class="book-cover" src="images/portrait.jpg" alt=""/>
+        <img class="book-cover" src="" alt=""/>
         <div class="book-info">
             <p class="book-name">漫十年</p>
             <p class="book-description">
@@ -56,17 +56,21 @@
         </div>
         <div class="user-info">
             <a class="user-style" href="">
-                <img class="user-avatar" src="images/avatar.jpg" alt=""/>
+                <img class="user-avatar" src="" alt=""/>
                 <span class="user-name">王振琦</span>
             </a>
             <button class="btn btn-elegance" type="button">
                 <span class="icon icon-link"></span>
                 <span>选择分页</span>
             </button>
-            <p class="book-settings">
+            <div class="book-settings">
                 <span class="icon icon-cog"></span>
-            </p>
-            <ul class=""></ul>
+                <ul class="setting-list">
+                    <li class="setting-item line" @click="bookPublishModalVisible"><span class="icon icon-bookmark"></span>发布</li>
+                    <li class="setting-item line" @click="bookUpdateModalVisible"><span class="icon icon-edit"></span>更新</li>
+                    <li class="setting-item" @click="bookDeleteModalVisible"><span class="icon icon-trash"></span>删除</li>
+                </ul>
+            </div>
         </div>
         <div class="book-appreciate">
             <span class="list-way list-active"></span>
@@ -74,30 +78,116 @@
         </div>
     </section>
     <section class="content">
-        <div class="page" v-for="(page, index) in pageList">
-            <img class="page-image" :src="page.image" alt=""/>
-            <p class="page-order">{{index + 1}}</p>
-            <p class="page-note">
-                <img src="images/icon/icon_setup_white.png" @click="pageUpdateModalVisible(page)"/>
-                <img src="images/icon/icon_trash_white.png" @click="pageDeleteModalVisible(page)"/>
-            </p>
-        </div>
+        <!--<div class="page" v-for="(page, index) in pageList">-->
+            <!--<img class="page-image" :src="page.image" alt=""/>-->
+            <!--<p class="page-order">{{index + 1}}</p>-->
+            <!--<p class="page-note">-->
+                <!--<img src="images/icon/icon_setup_white.png" @click="pageUpdateModalVisible(page)"/>-->
+                <!--<img src="images/icon/icon_trash_white.png" @click="pageDeleteModalVisible(page)"/>-->
+            <!--</p>-->
+        <!--</div>-->
     </section>
 </main>
 <footer class="footer">
     <span>&copy;&nbsp;2016-2019&nbsp;儒墨未来科技有限公司</span>
 </footer>
+<div id="bookPublishModal" class="modal" v-if="isVisible" v-cloak>
+    <dialog class="modal-dialog">
+        <header class="modal-header">
+            <h1 class="modal-title">发布漫画册</h1>
+            <div class="modal-dismiss">
+                <span class="icon icon-remove" @click="invisible"></span>
+            </div>
+        </header>
+        <main class="modal-content prompt">
+            <p class="prompt-title">您确定要发布该漫画册吗？</p>
+            <p class="prompt-note">
+                漫画册发布以后，您将无法对漫画册及漫画分页进行修改，并且无法删除该漫画册。
+            </p>
+        </main>
+        <footer class="modal-footer">
+            <button class="btn btn-petite btn-default pull-right" type="button" @click="invisible">取消</button>
+            <button class="btn btn-petite btn-primary pull-right" type="button">发布</button>
+        </footer>
+    </dialog>
+</div>
+<div id="bookUpdateModal" class="modal" v-if="isVisible" v-cloak>
+    <dialog class="modal-dialog">
+        <header class="modal-header">
+            <h1 class="modal-title">更新漫画册</h1>
+            <div class="modal-dismiss">
+                <span class="icon icon-remove" @click="invisible"></span>
+            </div>
+        </header>
+        <main class="modal-content">
+            <form class="form-horizontal form-label-2">
+                <div class="form-group img-group">
+                    <label class="form-label">封面</label>
+                    <img class="form-control" src="images/icon/picture_silver.png" alt=""/>
+                    <button class="btn btn-elegance pull-left" type="button">
+                        <span class="icon icon-link"></span>选择图片
+                    </button>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">名称</label>
+                    <input class="form-control" type="text"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">风格</label>
+                    <select class="form-control">
+                        <option selected disabled>请选择</option>
+                        <option value="古典">古典</option>
+                        <option value="热血">热血</option>
+                        <option value="唯美">唯美</option>
+                        <option value="清新">清新</option>
+                        <option value="推理">推理</option>
+                        <option value="爆笑">爆笑</option>
+                        <option value="悬疑">悬疑</option>
+                        <option value="萌系">萌系</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">简介</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+            </form>
+        </main>
+        <footer class="modal-footer">
+            <button class="btn btn-petite btn-default pull-right" type="button" @click="invisible">取消</button>
+            <button class="btn btn-petite btn-primary pull-right" type="button">创建</button>
+        </footer>
+    </dialog>
+</div>
+<div id="bookDeleteModal" class="modal" v-if="isVisible" v-cloak>
+    <dialog class="modal-dialog">
+        <header class="modal-header">
+            <h1 class="modal-title">删除漫画册</h1>
+            <div class="modal-dismiss">
+                <span class="icon icon-remove" @click="invisible"></span>
+            </div>
+        </header>
+        <main class="modal-content prompt">
+            <p>您确定要删除该漫画册吗？</p>
+        </main>
+        <footer class="modal-footer">
+            <button class="btn btn-petite btn-default pull-right" type="button" @click="invisible">取消</button>
+            <button class="btn btn-petite btn-primary pull-right" type="button">删除</button>
+        </footer>
+    </dialog>
+</div>
 <div id="pageSlideModal" class="modal slide" v-if="isVisible" v-cloak>
-    <img class="slide-img" :src="page.image" alt=""/>
-    <div class="slide-dismiss" @click="invisible"><img src="" alt=""/></div>
-    <section class="slide-nav pre" title="上一张" @click="preSlidePage">
-        <span class="slide-arrow"></span>
-        <img class="slide-preview" :src="prePage.image" alt=""/>
-    </section>
-    <section class="slide-nav next" title="下一张" @click="nextSlidePage">
-        <span class="slide-arrow"></span>
-        <img class="slide-preview" :src="nextPage.image" alt=""/>
-    </section>
+    <dialog class="slide-content">
+        <img class="slide-img" :src="page.image" alt=""/>
+        <div class="slide-dismiss" @click="invisible"><img src="" alt=""/></div>
+        <section class="slide-nav pre" title="上一张" @click="preSlidePage">
+            <span class="slide-arrow"></span>
+            <img class="slide-preview" :src="prePage.image" alt=""/>
+        </section>
+        <section class="slide-nav next" title="下一张" @click="nextSlidePage">
+            <span class="slide-arrow"></span>
+            <img class="slide-preview" :src="nextPage.image" alt=""/>
+        </section>
+    </dialog>
 </div>
 <div id="pageUpdateModal" class="modal" v-if="isVisible" v-cloak>
     <dialog class="modal-dialog">
@@ -126,7 +216,7 @@
                 <span class="icon icon-remove" @click="invisible"></span>
             </div>
         </header>
-        <main class="modal-content delete-content">
+        <main class="modal-content prompt">
             <p>您确定要删除该漫画分页吗？</p>
         </main>
         <footer class="modal-footer">
@@ -150,6 +240,15 @@
             ]
         },
         methods: {
+            bookPublishModalVisible: function () {
+                bookPublishModal.visible();
+            },
+            bookUpdateModalVisible: function () {
+                bookUpdateModal.visible();
+            },
+            bookDeleteModalVisible: function () {
+                bookDeleteModal.visible();
+            },
             pageSlideModalVisible: function () {
                 pageSlideModal.visible(this.pageList);
             },
@@ -158,6 +257,51 @@
             },
             pageDeleteModalVisible: function (page) {
                 pageDeleteModal.visible(page);
+            }
+        }
+    });
+
+    const bookPublishModal = new Vue({
+        el: "#bookPublishModal ",
+        data: {
+            isVisible: false
+        },
+        methods: {
+            visible: function () {
+                this.isVisible = true;
+            },
+            invisible: function () {
+                this.isVisible = false;
+            }
+        }
+    });
+
+    const bookUpdateModal = new Vue({
+        el: "#bookUpdateModal",
+        data: {
+            isVisible: false
+        },
+        methods: {
+            visible: function () {
+                this.isVisible = true;
+            },
+            invisible: function () {
+                this.isVisible = false;
+            }
+        }
+    });
+
+    const bookDeleteModal = new Vue({
+        el: "#bookDeleteModal",
+        data: {
+            isVisible: false
+        },
+        methods: {
+            visible: function () {
+                this.isVisible = true;
+            },
+            invisible: function () {
+                this.isVisible = false;
             }
         }
     });

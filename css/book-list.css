@@ -1,0 +1,47 @@
+.master {
+    width: 1200px;
+    height: 180px;
+    margin: 40px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme {
+    width: 1200px;
+    height: 120px;
+    line-height: 120px;
+    background: url(../images/kingfishersrock.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 8px;
+    text-shadow: 0 4px 8px rgba(7, 17, 27, 0.25);
+}
+
+.style {
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 15px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.style-title {
+    font-weight: 700;
+}
+
+.style-item {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.style-active {
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ced4da;
+}
+

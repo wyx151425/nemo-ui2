@@ -97,8 +97,42 @@
     cursor: pointer;
 }
 
-.book-settings .icon {
+.book-settings > .icon {
     top: 3px;
+}
+
+.book-settings:hover > .setting-list {
+    display: block;
+}
+
+.setting-list {
+    display: none;
+    position: absolute;
+    top: -22px;
+    right: 0;
+    width: 100px;
+    height: 122px;
+    color: #000;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.setting-item {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.setting-list .icon {
+    top: 2px;
+    margin-right: 8px;
+}
+
+.setting-list .line {
+    border-bottom: 1px solid #ced4da;
 }
 
 .book-appreciate {
@@ -139,13 +173,55 @@
     background-size: cover;
 }
 
+.form-label-2 .form-label {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.form-label-2 .form-control {
+    width: 328px;
+}
+
+.form-label-2 textarea.form-control {
+    min-width: 328px;
+    max-width: 328px;
+}
+
+.img-group .form-label {
+    float: left;
+    height: 90px;
+    line-height: 90px;
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+.img-group .form-control {
+    float: left;
+    display: block;
+    width: 118px;
+    height: 88px;
+    padding: 0;
+    object-fit: cover;
+    border: 1px solid #ced4da;
+}
+
+.img-group .btn {
+    margin: 27px 0 27px 12px;
+}
+
 .slide {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.slide-content {
+    width: 100%;
+    height: 100%;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: transparent;
 }
 
 .slide-img {
@@ -261,10 +337,27 @@
     background-color: #fff;
 }
 
-.delete-content {
+.prompt {
     font-size: 17px;
+}
+
+.prompt-title {
+    font-size: 17px;
+}
+
+.prompt-note {
+    color: #909399;
+    font-size: 14px;
+}
+
+.icon-trash:before {
+    content: "\e020";
 }
 
 .icon-bookmark:before {
     content: "\e044";
+}
+
+.icon-edit:before {
+    content: "\e065";
 }

@@ -233,13 +233,13 @@ main.container {
     min-height: 800px;
 }
 
-.panel {
-    width: 1200px;
-    min-height: 800px;
-    margin-bottom: 60px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);
-}
+/*.panel {*/
+    /*width: 1200px;*/
+    /*min-height: 800px;*/
+    /*margin-bottom: 60px;*/
+    /*background-color: #fff;*/
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 0 4px rgba(0, 0, 0, 0.15);*/
+/*}*/
 
 .content {
     display: flex;

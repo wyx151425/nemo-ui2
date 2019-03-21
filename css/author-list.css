@@ -1,0 +1,66 @@
+.master {
+    width: 1200px;
+    height: 120px;
+    line-height: 120px;
+    background: url(../images/kingfishersrock.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 8px;
+    text-shadow: 0 4px 8px rgba(7, 17, 27, 0.25);
+    margin: 40px 0;
+}
+
+.author {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 224px;
+    height: 300px;
+    margin: 0 20px 40px 0;
+    padding: 24px 16px;
+    color: #000;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.author:hover, .author:active {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.author-avatar {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author-name {
+    width: 192px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.author-note {
+    width: 192px;
+    color: #909399;
+    font-size: 13px;
+    text-align: center;
+}
+
+.author-biography {
+    width: 192px;
+    height: 100px;
+    line-height: 20px;
+    color: #606266;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
