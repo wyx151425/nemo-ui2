@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 1200px;
     height: 450px;
+    margin-bottom: 40px;
 }
 
 .carousel {
@@ -50,9 +51,63 @@
 }
 
 .panel {
-    width: 340px;
-    height: 390px;
-    padding: 30px;
+    width: 352px;
+    height: 402px;
+    padding: 24px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.panel-item {
+
+}
+
+.content {
+    flex-direction: column;
+}
+
+.row {
+    width: 1200px;
+    margin-top: 40px;
+    border-top: 1px solid #ced4da;
+}
+
+.row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 80px;
+}
+
+.row-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.row-link {
+    width: 88px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #303133;
+    border-radius: 2px;
+    color: #303133;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    background-color: transparent;
+}
+
+.list {
+    width: 1200px;
+    margin-bottom: 40px;
+}
+
+.icon-menu-right:before {
+    content: "\e258";
 }
